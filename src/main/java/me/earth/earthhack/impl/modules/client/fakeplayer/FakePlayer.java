@@ -2,7 +2,7 @@ package me.earth.earthhack.impl.modules.client.fakeplayer;
 
 import com.mojang.authlib.GameProfile;
 import me.earth.earthhack.api.module.Category;
-import me.earth.earthhack.impl.util.beans.DisablingModule;
+import me.earth.earthhack.impl.util.helpers.DisablingModule;
 import me.earth.earthhack.impl.util.minecraft.PlayerUtil;
 import net.minecraft.client.entity.EntityOtherPlayerMP;
 

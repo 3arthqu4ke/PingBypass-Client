@@ -1,4 +1,4 @@
-package me.earth.earthhack.impl.util.beans;
+package me.earth.earthhack.impl.util.helpers;
 
 import me.earth.earthhack.api.event.bus.EventListener;
 import me.earth.earthhack.api.module.Category;

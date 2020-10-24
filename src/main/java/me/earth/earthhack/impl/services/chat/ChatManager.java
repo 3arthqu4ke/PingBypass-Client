@@ -3,7 +3,7 @@ package me.earth.earthhack.impl.services.chat;
 import me.earth.earthhack.api.event.bus.EventListener;
 import me.earth.earthhack.api.event.bus.SubscriberImpl;
 import me.earth.earthhack.impl.event.events.network.DisconnectEvent;
-import me.earth.earthhack.impl.util.beans.Counter;
+import me.earth.earthhack.impl.util.helpers.Counter;
 import me.earth.earthhack.impl.util.text.ChatUtil;
 import net.minecraft.util.text.ITextComponent;
 
