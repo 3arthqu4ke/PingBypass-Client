@@ -50,7 +50,7 @@ public class LookUpUtil implements Globals
             if (profile != null)
             {
                 UUID result = profile.getGameProfile().getId();
-                CACHE.put(name, result);
+                CACHE.forcePut(name, result);
                 return result;
             }
         }
@@ -79,7 +79,7 @@ public class LookUpUtil implements Globals
                 {
                     String id = element.getAsJsonArray().get(0).getAsJsonObject().get("id").getAsString();
                     UUID result = UUIDTypeAdapter.fromString(id);
-                    CACHE.put(name, result);
+                    CACHE.forcePut(name, result);
                     return result;
                 }
                 catch (Exception e)
@@ -109,7 +109,7 @@ public class LookUpUtil implements Globals
                 if (gameProfile.getId().equals(uuid))
                 {
                     String name = gameProfile.getName();
-                    CACHE.put(name, uuid);
+                    CACHE.forcePut(name, uuid);
                     return name;
                 }
             }
