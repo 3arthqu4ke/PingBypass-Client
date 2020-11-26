@@ -72,7 +72,7 @@ public class FriendSerializer extends SubscriberImpl implements Serializer<Frien
     @Override
     public void serializeAndSend(FriendEvent event)
     {
-        String command = "@Server";
+        String command = "@ServerFriend";
         if (event.getType() == FriendType.ADD)
         {
             command += " add " + event.getName() + " " + event.getUuid();
