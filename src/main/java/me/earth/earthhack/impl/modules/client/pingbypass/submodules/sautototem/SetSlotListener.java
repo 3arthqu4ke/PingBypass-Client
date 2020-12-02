@@ -25,7 +25,7 @@ public class SetSlotListener extends ModuleListener<ServerAutoTotem, PacketEvent
         if (PingBypass.getInstance().isEnabled() && mc.player != null)
         {
             SPacketSetSlot packet = event.getPacket();
-            if (packet.getSlot() == -1)
+            if (packet.getSlot() == -1337)
             {
                 ((IContainer) mc.player.openContainer).setTransactionID((short) packet.getWindowId()); //hmm TODO: maybe better id to increment?
                 ((ISPacketSetSlot) packet).setWindowId(-1); //make NetHandlerPlayClient set mouse slot.
