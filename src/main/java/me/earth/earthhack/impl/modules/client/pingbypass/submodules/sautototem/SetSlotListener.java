@@ -5,6 +5,7 @@ import me.earth.earthhack.impl.core.mixins.minecraft.network.server.ISPacketSetS
 import me.earth.earthhack.impl.event.ModuleListener;
 import me.earth.earthhack.impl.event.events.network.PacketEvent;
 import me.earth.earthhack.impl.modules.client.pingbypass.PingBypass;
+import net.minecraft.inventory.Slot;
 import net.minecraft.network.play.server.SPacketSetSlot;
 
 /**
@@ -29,6 +30,15 @@ public class SetSlotListener extends ModuleListener<ServerAutoTotem, PacketEvent
             {
                 ((IContainer) mc.player.openContainer).setTransactionID((short) packet.getWindowId()); //hmm TODO: maybe better id to increment?
                 ((ISPacketSetSlot) packet).setWindowId(-1); //make NetHandlerPlayClient set mouse slot.
+            }
+            else if (packet.getWindowId() == -128)
+            {
+                event.setCancelled(true);
+                mc.addScheduledTask(() ->
+                {
+                    Slot slot = mc.player.inventoryContainer.inventorySlots.get(packet.getSlot());
+                    slot.putStack(packet.getStack());
+                });
             }
         }
     }
