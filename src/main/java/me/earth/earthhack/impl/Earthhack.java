@@ -18,7 +18,7 @@ import org.lwjgl.opengl.Display;
 @Mod(modid = Earthhack.MODID, name = Earthhack.NAME, version = Earthhack.VERSION)
 public class Earthhack implements Globals
 {
-    public static final String MODID = "earthhack";
+    public static final String MODID = "pingbypassclient";
     public static final String NAME = "3arthh4ck";
     public static final String VERSION = "1.0.0";
     public static final EventBus EVENT_BUS = Bus.EVENT_BUS;
