@@ -11,6 +11,7 @@ import me.earth.earthhack.impl.modules.client.fakeplayer.FakePlayer;
 import me.earth.earthhack.impl.modules.client.pingbypass.serializer.friend.FriendSerializer;
 import me.earth.earthhack.impl.modules.client.pingbypass.serializer.setting.SettingSerializer;
 import me.earth.earthhack.impl.modules.client.pingbypass.submodules.sSafety.ServerSafety;
+import me.earth.earthhack.impl.modules.client.pingbypass.submodules.sSurround.ServerSurround;
 import me.earth.earthhack.impl.modules.client.pingbypass.submodules.sautocrystal.ServerAutoCrystal;
 import me.earth.earthhack.impl.modules.client.pingbypass.submodules.sautototem.ServerAutoTotem;
 import me.earth.earthhack.impl.modules.client.pingbypass.submodules.sinventory.ServerInventory;
@@ -52,7 +53,7 @@ public class PingBypass extends Module
     @Override
     protected void onLoad()
     {
-        serializer = new SettingSerializer(this, ServerAutoTotem.getInstance(), ServerAutoCrystal.getInstance(), FakePlayer.getInstance(), ServerSafety.getInstance(), ServerInventory.getInstance());
+        serializer = new SettingSerializer(this, ServerAutoTotem.getInstance(), ServerAutoCrystal.getInstance(), FakePlayer.getInstance(), ServerSafety.getInstance(), ServerInventory.getInstance(), ServerSurround.getInstance());
         this.listeners.addAll(serializer.getListeners());
         friendSerializer = new FriendSerializer();
         this.listeners.addAll(friendSerializer.getListeners());

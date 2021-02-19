@@ -6,6 +6,7 @@ import me.earth.earthhack.impl.modules.client.fakeplayer.FakePlayer;
 import me.earth.earthhack.impl.modules.client.mcf.MiddleClickFriends;
 import me.earth.earthhack.impl.modules.client.pingbypass.PingBypass;
 import me.earth.earthhack.impl.modules.client.pingbypass.submodules.sSafety.ServerSafety;
+import me.earth.earthhack.impl.modules.client.pingbypass.submodules.sSurround.ServerSurround;
 import me.earth.earthhack.impl.modules.client.pingbypass.submodules.sautocrystal.ServerAutoCrystal;
 import me.earth.earthhack.impl.modules.client.pingbypass.submodules.sautototem.ServerAutoTotem;
 
@@ -35,6 +36,7 @@ public class ModuleManager
         register(ServerAutoTotem.getInstance());
         register(ServerSafety.getInstance());
         register(PingBypass.getInstance());
+        register(ServerSurround.getInstance());
     }
 
     public void load()
