@@ -17,7 +17,7 @@ import net.minecraft.util.math.BlockPos;
 
 /*
 For some reason in the VPS instance, it shows the surround actually working, but then in the client-side user connection, it doesn't.
-Thich causes a lot of rubberbanding in the places where "obsidian" is placed.
+This causes a lot of rubberbanding in the places where "obsidian" is placed.
 TODO: Find a solution to prevent duplicate code in PingBypass for the VPS, and the client-side instance.
  */
 
