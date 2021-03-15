@@ -1,4 +1,4 @@
-package me.earth.earthhack.impl.modules.client.pingbypass.submodules.sSurround;
+package me.earth.earthhack.impl.modules.client.pingbypass.submodules.ssurround;
 
 import me.earth.earthhack.impl.event.ModuleListener;
 import me.earth.earthhack.impl.event.events.misc.TickEvent;

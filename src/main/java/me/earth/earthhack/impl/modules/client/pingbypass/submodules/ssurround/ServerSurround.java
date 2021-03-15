@@ -1,4 +1,4 @@
-package me.earth.earthhack.impl.modules.client.pingbypass.submodules.sSurround;
+package me.earth.earthhack.impl.modules.client.pingbypass.submodules.ssurround;
 
 import me.earth.earthhack.api.module.Category;
 import me.earth.earthhack.api.setting.Setting;
