@@ -23,7 +23,7 @@ public class ServerSurround extends SubModule {
     private static final ServerSurround INSTANCE = new ServerSurround();
     private final StopWatch timer = new StopWatch();
 
-    final Setting<Boolean> center = register(new BooleanSetting("Center", true));
+    private final Setting<Boolean> center = register(new BooleanSetting("Center", true));
     private BlockPos surroundPos = new BlockPos(0, -100, 0);
 
     private ServerSurround() {
