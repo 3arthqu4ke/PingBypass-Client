@@ -21,7 +21,7 @@ import net.minecraft.util.math.BlockPos;
 public class ServerSurround extends SubModule {
 
     private static final ServerSurround INSTANCE = new ServerSurround();
-    final StopWatch timer = new StopWatch();
+    private final StopWatch timer = new StopWatch();
 
     final Setting<Boolean> center = register(new BooleanSetting("Center", true));
     private BlockPos surroundPos = new BlockPos(0, -100, 0);
