@@ -1,3 +1,5 @@
+> :warning: This project is now outdated. The new PingBypass proxy [here](https://github.com/3arthqu4ke/3arthh4ck) is much more powerful. E.g. it allows you to leave the proxy connected to the server and join through it at a later point.
+
 # PingBypassClient
 
 PingBypassClient or 3arthh4ck (at least a dumbed down version of it) is a Client that allows you to connect to PingBypass (https://github.com/3arthqu4ke/PingBypass) proxies.
